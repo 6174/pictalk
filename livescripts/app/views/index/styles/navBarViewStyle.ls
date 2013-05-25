@@ -6,7 +6,7 @@ module.exports = {
 	nav-bar-view: 
 		width: "100%"
 		height: "120px"
-		background: "black"
+		background-color: "black"
 		bottom: "0px"
 	nav-group:
 		width: "100%"
@@ -18,7 +18,7 @@ module.exports = {
 		right: "0px"
 		color: "white"
 		font:
-			font-size: "40px"
+			font-size: "25px"
 			font-weight: "bold"
 	nav-icon:
 		left: "0px"

@@ -41,6 +41,7 @@ nav-bar-view.create-nav-group = ->
 		nav-item = TUI.create-view _this.Style.nav-item-view
 		#add label
 		label = TUI.create-label _this.Style.nav-label
+		label.text = data.title
 		nav-item.add label
 		#add icon
 		icon = TUI.create-image-view _this.Style.nav-icon

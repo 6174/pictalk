@@ -8,7 +8,7 @@
     navBarView: {
       width: "100%",
       height: "120px",
-      background: "black",
+      backgroundColor: "black",
       bottom: "0px"
     },
     navGroup: {
@@ -23,7 +23,7 @@
       right: "0px",
       color: "white",
       font: {
-        fontSize: "40px",
+        fontSize: "25px",
         fontWeight: "bold"
       }
     },

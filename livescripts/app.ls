@@ -18,4 +18,7 @@ YTI.View.extend({
 	nav-bar-view
 	})
 
+#pic-view
+YTI.View.extend({
+	})
 main-window.add home-view.get-page-view!

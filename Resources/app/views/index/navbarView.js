@@ -64,6 +64,7 @@
       var navItem, label, icon;
       navItem = TUI.createView(_this.Style.navItemView);
       label = TUI.createLabel(_this.Style.navLabel);
+      label.text = data.title;
       navItem.add(label);
       icon = TUI.createImageView(_this.Style.navIcon);
       icon.image = data.icon;
