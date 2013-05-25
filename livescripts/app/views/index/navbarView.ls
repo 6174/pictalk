@@ -1,7 +1,7 @@
 require! ["styles/navBarViewStyle"]
 
 #create-nav-bar-view
-nav-bar-view = YTI.View.nav-bar-view || YTI.iew.create!
+nav-bar-view = YTI.View.nav-bar-view || YTI.View.create!
 nav-bar-view.extend({
 	Els: {}
 	Data: {}
@@ -59,6 +59,9 @@ nav-bar-view.create-nav-group = ->
 		left += 25
 		nav-group.add item-view
 	nav-group
+
+/*==============================Controller=========================*/
+module.exports = nav-bar-view
 
 			
 

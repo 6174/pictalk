@@ -47,13 +47,12 @@ home-view.hide = ->
 home-view.create-page-view = ->
 	log \create-home-view
 	View = @Els.page-view = TUI.create-view @Style.page-view
-	View.add @create-top-bar-view!
-	View.add @create-info-list-view!
+	View.add YTI.View.top-bar-view.get-page-view!
+	View.add YTI.View.info-list-view.get-page-view!
+	View.add YTI.View.nav-bar-view.get-page-view!
 	View
-home-view.create-top-bar-view = ->
-	YTI.View.top-bar-view.get-page-view!
-home-view.create-info-list-view = ->
-	YTI.View.info-list-view.get-page-view!
+ 
+	
 /*==========================Control==================================*/
 
 module.exports = home-view

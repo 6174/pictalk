@@ -53,15 +53,10 @@
     var View;
     log('create-home-view');
     View = this.Els.pageView = TUI.createView(this.Style.pageView);
-    View.add(this.createTopBarView());
-    View.add(this.createInfoListView());
+    View.add(YTI.View.topBarView.getPageView());
+    View.add(YTI.View.infoListView.getPageView());
+    View.add(YTI.View.navBarView.getPageView());
     return View;
-  };
-  homeView.createTopBarView = function(){
-    return YTI.View.topBarView.getPageView();
-  };
-  homeView.createInfoListView = function(){
-    return YTI.View.infoListView.getPageView();
   };
   /*==========================Control==================================*/
   module.exports = homeView;

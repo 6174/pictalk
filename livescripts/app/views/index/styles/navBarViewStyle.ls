@@ -16,6 +16,7 @@ module.exports = {
 		height: "100%"
 	nav-label:
 		right: "0px"
+		color: "white"
 		font:
 			font-size: "40px"
 			font-weight: "bold"

@@ -1,7 +1,7 @@
 (function(){
   var navBarViewStyle, navBarView;
   navBarViewStyle = require('styles/navBarViewStyle');
-  navBarView = YTI.View.navBarView || YTI.iew.create();
+  navBarView = YTI.View.navBarView || YTI.View.create();
   navBarView.extend({
     Els: {},
     Data: {},
@@ -84,4 +84,6 @@
     }
     return navGroup;
   };
+  /*==============================Controller=========================*/
+  module.exports = navBarView;
 }).call(this);

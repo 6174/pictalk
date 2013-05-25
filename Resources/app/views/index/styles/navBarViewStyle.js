@@ -21,6 +21,7 @@
     },
     navLabel: {
       right: "0px",
+      color: "white",
       font: {
         fontSize: "40px",
         fontWeight: "bold"
