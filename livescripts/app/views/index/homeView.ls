@@ -20,7 +20,7 @@ home-view.get-page-view = ->
 	if @Els["pageView"]
 		return @Els["pageView"]
 	else
-		view = @create-home-view!
+		view = @create-page-view!
 		view
 
 /**
@@ -44,15 +44,16 @@ home-view.hide = ->
 /**
  *@method create-home-view 
  */
-home-view.create-home-view = ->
+home-view.create-page-view = ->
 	log \create-home-view
 	View = @Els.page-view = TUI.create-view @Style.page-view
+	View.add @create-top-bar-view!
+	View.add @create-info-list-view!
 	View
-/**
- *@method create-header-view 
- */
 home-view.create-top-bar-view = ->
-	top-bar-view.get-page-view!
+	YTI.View.top-bar-view.get-page-view!
+home-view.create-info-list-view = ->
+	YTI.View.info-list-view.get-page-view!
 /*==========================Control==================================*/
 
 module.exports = home-view

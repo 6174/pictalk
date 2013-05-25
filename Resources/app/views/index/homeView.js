@@ -21,7 +21,7 @@
     if (this.Els["pageView"]) {
       return this.Els["pageView"];
     } else {
-      view = this.createHomeView();
+      view = this.createPageView();
       return view;
     }
   };
@@ -49,17 +49,19 @@
   /**
    *@method create-home-view 
    */
-  homeView.createHomeView = function(){
+  homeView.createPageView = function(){
     var View;
     log('create-home-view');
     View = this.Els.pageView = TUI.createView(this.Style.pageView);
+    View.add(this.createTopBarView());
+    View.add(this.createInfoListView());
     return View;
   };
-  /**
-   *@method create-header-view 
-   */
   homeView.createTopBarView = function(){
-    return topBarView.getPageView();
+    return YTI.View.topBarView.getPageView();
+  };
+  homeView.createInfoListView = function(){
+    return YTI.View.infoListView.getPageView();
   };
   /*==========================Control==================================*/
   module.exports = homeView;

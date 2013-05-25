@@ -7,7 +7,7 @@
     <property name="acs-oauth-key-development" type="string">BfttmABbCoUgKaok4tcayoHpyzNEBz9h</property>
     <property name="acs-api-key-development" type="string">LdJSy7S0wVxhGbVqyqBswx2QCV4kN1j5</property>
     <id>com.pictalk</id>
-    <name>habit</name>
+    <name>tuya</name>
     <version>1.0</version>
     <publisher>Administrator</publisher>
     <url>http://www.pictalk.com</url>

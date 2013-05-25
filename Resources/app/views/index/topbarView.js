@@ -27,13 +27,15 @@
     var View;
     log('create-top-bar-view');
     View = this.Els.pageView = TUI.createView(this.Style.topBarView);
-    return View.add(this.createTopBarView());
+    View.add(this.createTitleView());
+    return View;
   };
   /**
    *@method create-top-bar-navs
    */
-  topBarView.createTopBarNavs = function(){
+  topBarView.createTitleView = function(){
     var title;
+    log('create-title-view');
     title = TUI.createLabel(this.Style.titleView);
     title.text = "图吖啊！";
     return title;
