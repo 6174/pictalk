@@ -55,7 +55,6 @@ home-view.create-page-view = ->
  
 	
 /*==========================Control==================================*/
-
 module.exports = home-view
 
 
