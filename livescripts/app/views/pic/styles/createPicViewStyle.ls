@@ -11,6 +11,12 @@ module.exports = {
 		top: "120px"
 		bottom: "120px"
 		background-color: "\#eefe79"
+	pic-container:
+		height: "1000px"
+		width: "1000px"
+		top: "0px"
+		left: "0px"
+		background-color: "white"
 	tool-bar-view:
 		bottom: "0px"
 		height: "120px"
@@ -18,6 +24,7 @@ module.exports = {
 		border-color: "gray"
 	submit-btn:
 		text: "提交"
+		text-align: "center"
 		width: "20%"
 		height: "100%"
 		left: "0px"
@@ -32,4 +39,12 @@ module.exports = {
 		right: "0px"
 		background-color: "white" 
 		scroll-type: "horizontal"
+	tool-item:
+		text-align: "center"
+		border-width: 1
+		border-color: "gray"
+		height: "100%"
+		font: 
+			font-size: "30px"
+		color: "gray"
 }

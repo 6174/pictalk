@@ -15,6 +15,13 @@
       bottom: "120px",
       backgroundColor: "#eefe79"
     },
+    picContainer: {
+      height: "1000px",
+      width: "1000px",
+      top: "0px",
+      left: "0px",
+      backgroundColor: "white"
+    },
     toolBarView: {
       bottom: "0px",
       height: "120px",
@@ -23,6 +30,7 @@
     },
     submitBtn: {
       text: "提交",
+      textAlign: "center",
       width: "20%",
       height: "100%",
       left: "0px",
@@ -39,6 +47,16 @@
       right: "0px",
       backgroundColor: "white",
       scrollType: "horizontal"
+    },
+    toolItem: {
+      textAlign: "center",
+      borderWidth: 1,
+      borderColor: "gray",
+      height: "100%",
+      font: {
+        fontSize: "30px"
+      },
+      color: "gray"
     }
   };
 }).call(this);
