@@ -33,6 +33,7 @@
     pageView = this.getPageView();
     pageView.show();
     if (!addedToWindow) {
+      addedToWindow = true;
       YTI.APP.mainWindow.add(pageView);
     }
     return pageView;

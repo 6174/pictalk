@@ -1,5 +1,5 @@
 (function(){
-  var topBarViewStyle, topBarView;
+  var topBarViewStyle, topBarView, addedToWindow;
   topBarViewStyle = require('styles/topBarViewStyle');
   topBarView = YTI.View.topBarView || YTI.View.create();
   topBarView.extend({
@@ -7,6 +7,7 @@
     Data: {},
     Style: topBarViewStyle
   });
+  addedToWindow = false;
   /*===========================View=====================*/
   /**
    *@method get-top-bar-view
@@ -19,6 +20,22 @@
       view = this.createPageView();
       return view;
     }
+  };
+  topBarView.show = function(){
+    var pageView;
+    pageView = this.getPageView();
+    pageView.show();
+    if (!addedToWindow) {
+      addedToWindow = true;
+      YTI.APP.mainWindow.add(pageView);
+    }
+    return pageView;
+  };
+  topBarView.hide = function(){
+    var pageView;
+    pageView = this.getPageView();
+    pageView.hide();
+    return pageView;
   };
   /**
    *@method create-top-bar-view
@@ -35,7 +52,6 @@
    */
   topBarView.createTitleView = function(){
     var title;
-    log('create-title-view');
     title = TUI.createLabel(this.Style.titleView);
     title.text = "图吖啊！";
     return title;

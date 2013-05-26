@@ -29,7 +29,9 @@ talk-list-view.show = ->
 	page-view = @get-page-view!
 	page-view.show!
 	if not added-to-window
+		added-to-window := true
 		YTI.APP.main-window.add page-view
+	YTI.View.nav-bar-view.hide!
 	page-view
 /**
  *@method hide
@@ -37,15 +39,22 @@ talk-list-view.show = ->
 talk-list-view.hide = ->
 	page-view = @get-page-view!
 	page-view.hide!
+	YTI.View.nav-bar-view.show!
 	page-view
 /**
  *@method create-page-view
  */
 talk-list-view.create-page-view = ->
-	log \create-talk-list-view
 	View = @Els.page-view = TUI.create-view @Style.page-view
 	View.add @create-talk-list-view!
+	View.add @create-reply-view!
 	View
+/**
+ *@method create-back-button
+ */
+talk-list-view.create-reply-view = ->
+	reply-button = TUI.create-button @Style.reply-button
+	reply-button
 /**
  *@method create-talk-list-view
  */
@@ -77,9 +86,9 @@ talk-list-view.create-talk-item = (data)->
 talk-list-view.update-talk-list = !->
 	scroll-container = @Els.scroll-container
 	#mock 
-	top = 40
-	margin-top = 20
-	height = 400
+	top = 70
+	margin-top = 70
+	height = 540
 	for i from 0 to 10 by 1
 		data = {
 			style:
@@ -87,6 +96,7 @@ talk-list-view.update-talk-list = !->
 		}
 		top += margin-top + height
 		item-view = @create-talk-item data
+		scroll-container.add item-view
 
 
 

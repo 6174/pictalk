@@ -12,22 +12,23 @@
     },
     scrollContainerView: {
       top: "120px",
-      bottom: "120px",
+      bottom: "0px",
       width: '100%',
       scrollType: "vertical",
       backgroundColor: "gray"
     },
     talkItemView: {
-      height: "400px",
+      height: "600px",
       left: "20px",
       right: "20px",
       borderWidth: 1,
       borderColor: "gray"
     },
     cardUserInfoBar: {
-      height: "60px",
+      top: "0px",
+      height: "120px",
       width: "100%",
-      backgroundColor: "#123412"
+      backgroundColor: "white"
     },
     cardInfoBarDate: {
       right: "20px",
@@ -35,8 +36,21 @@
       color: "gray"
     },
     picCardView: {
-      height: "340px",
-      backgroundColor: "white"
+      top: "120px",
+      height: "400px",
+      backgroundColor: "#121212"
+    },
+    picCardFooter: {
+      top: "520px",
+      height: "80px"
+    },
+    replyButton: {
+      title: "回复",
+      font: {
+        fontSize: "40px",
+        fontWeight: "bold"
+      },
+      bottom: "0px"
     }
   };
 }).call(this);

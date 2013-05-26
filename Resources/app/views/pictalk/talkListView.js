@@ -32,8 +32,10 @@
     pageView = this.getPageView();
     pageView.show();
     if (!addedToWindow) {
+      addedToWindow = true;
       YTI.APP.mainWindow.add(pageView);
     }
+    YTI.View.navBarView.hide();
     return pageView;
   };
   /**
@@ -43,6 +45,7 @@
     var pageView;
     pageView = this.getPageView();
     pageView.hide();
+    YTI.View.navBarView.show();
     return pageView;
   };
   /**
@@ -50,10 +53,18 @@
    */
   talkListView.createPageView = function(){
     var View;
-    log('create-talk-list-view');
     View = this.Els.pageView = TUI.createView(this.Style.pageView);
     View.add(this.createTalkListView());
+    View.add(this.createReplyView());
     return View;
+  };
+  /**
+   *@method create-back-button
+   */
+  talkListView.createReplyView = function(){
+    var replyButton;
+    replyButton = TUI.createButton(this.Style.replyButton);
+    return replyButton;
   };
   /**
    *@method create-talk-list-view
@@ -87,9 +98,9 @@
   talkListView.updateTalkList = function(){
     var scrollContainer, top, marginTop, height, i$, i, data, itemView;
     scrollContainer = this.Els.scrollContainer;
-    top = 40;
-    marginTop = 20;
-    height = 400;
+    top = 70;
+    marginTop = 70;
+    height = 540;
     for (i$ = 0; i$ <= 10; ++i$) {
       i = i$;
       data = {
@@ -99,6 +110,7 @@
       };
       top += marginTop + height;
       itemView = this.createTalkItem(data);
+      scrollContainer.add(itemView);
     }
   };
   /*===================================Control=======================*/

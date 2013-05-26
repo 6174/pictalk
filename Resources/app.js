@@ -15,7 +15,7 @@
     navBarView: navBarView,
     talkListView: talkListView
   });
-  mainWindow.add(topBarView.getPageView());
-  mainWindow.add(talkListView.getPageView());
-  mainWindow.add(navBarView.getPageView());
+  topBarView.show();
+  navBarView.show();
+  talkListView.show();
 }).call(this);

@@ -24,6 +24,6 @@ YTI.View.extend({
 #pic-view
 # YTI.View.extend({
 # 	})
-main-window.add top-bar-view.get-page-view!
-main-window.add talk-list-view.get-page-view!
-main-window.add nav-bar-view.get-page-view!
+top-bar-view.show!
+nav-bar-view.show!
+talk-list-view.show!

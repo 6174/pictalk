@@ -1,5 +1,5 @@
 (function(){
-  var navBarViewStyle, navBarView;
+  var navBarViewStyle, navBarView, addedToWindow;
   navBarViewStyle = require('styles/navBarViewStyle');
   navBarView = YTI.View.navBarView || YTI.View.create();
   navBarView.extend({
@@ -7,6 +7,7 @@
     Data: {},
     Style: navBarViewStyle
   });
+  addedToWindow = false;
   /*===========================View=====================/
   /**
    *@method get-page-view
@@ -20,6 +21,24 @@
       return view;
     }
   };
+  navBarView.show = function(){
+    var pageView;
+    log('show-nav-bar-view');
+    pageView = this.getPageView();
+    pageView.show();
+    if (!addedToWindow) {
+      addedToWindow = true;
+      YTI.APP.mainWindow.add(pageView);
+    }
+    return pageView;
+  };
+  navBarView.hide = function(){
+    var pageView;
+    log('hide-nav-bar-view');
+    pageView = this.getPageView();
+    pageView.setVisible(false);
+    return pageView;
+  };
   /**
    *@method create-nav-bar-view 
    */
@@ -28,6 +47,7 @@
     log('create-nav-bar-view');
     View = this.Els.pageView = TUI.createView(this.Style.navBarView);
     View.add(this.createNavGroup());
+    View.hide();
     return View;
   };
   /**

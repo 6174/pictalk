@@ -30,6 +30,7 @@ home-view.show = ->
 	page-view = @get-page-view!
 	page-view.show!
 	if not added-to-window
+		added-to-window := true
 		YTI.APP.main-window.add page-view
 	page-view
 
