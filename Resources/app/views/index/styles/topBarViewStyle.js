@@ -10,7 +10,8 @@
       backgroundImage: "",
       height: "120px",
       top: "0px",
-      width: "100%"
+      width: "100%",
+      zIndex: 10
     },
     titleView: {
       font: baseFont,

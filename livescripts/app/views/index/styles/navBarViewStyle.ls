@@ -8,6 +8,7 @@ module.exports = {
 		height: "120px"
 		background-color: "black"
 		bottom: "0px"
+		z-index: 10
 	nav-group:
 		width: "100%"
 		height: "100%"
@@ -15,7 +16,7 @@ module.exports = {
 		width: "25%"
 		height: "100%"
 	nav-label:
-		right: "0px"
+		right: "30px"
 		color: "white"
 		font:
 			font-size: "25px"

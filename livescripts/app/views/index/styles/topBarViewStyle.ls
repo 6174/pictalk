@@ -9,7 +9,9 @@ module.exports = {
 		height: "120px"
 		top: "0px"
 		width: "100%"
+		z-index: 10
 	title-view:
 		font: base-font
 		color: "white"
+	
 }

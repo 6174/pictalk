@@ -53,9 +53,7 @@
     var View;
     log('create-home-view');
     View = this.Els.pageView = TUI.createView(this.Style.pageView);
-    View.add(YTI.View.topBarView.getPageView());
     View.add(YTI.View.infoListView.getPageView());
-    View.add(YTI.View.navBarView.getPageView());
     return View;
   };
   /*==========================Control==================================*/

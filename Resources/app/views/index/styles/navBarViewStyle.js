@@ -9,7 +9,8 @@
       width: "100%",
       height: "120px",
       backgroundColor: "black",
-      bottom: "0px"
+      bottom: "0px",
+      zIndex: 10
     },
     navGroup: {
       width: "100%",
@@ -20,7 +21,7 @@
       height: "100%"
     },
     navLabel: {
-      right: "0px",
+      right: "30px",
       color: "white",
       font: {
         fontSize: "25px",
