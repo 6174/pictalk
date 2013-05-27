@@ -57,6 +57,18 @@
         fontSize: "30px"
       },
       color: "gray"
+    },
+    textTip: {
+      width: "80px",
+      height: "80px",
+      borderWidth: 1,
+      borderColor: "gray"
+    },
+    voiceTip: {
+      width: "80px",
+      height: "80px",
+      borderWidth: 1,
+      borderColor: "red"
     }
   };
 }).call(this);

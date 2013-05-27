@@ -30,5 +30,12 @@
 ###step4 --- 整合
 
 ---------
-2013-5-26
+2013-5-27
 ---------
+实现create-pic的拖拽，拖拽现在还有问题， 主要是blink晃动问题
+并且现在无法通过multiple touch实现scale 如果要实现scale那么以后再说吧
+to-do:
+  text-tip 和 voice-tip实现图片背景
+  tip的longtap， animation 的重复晃动效果，再次点击删除tip
+  text-tip 和 pic-container的位置关系
+

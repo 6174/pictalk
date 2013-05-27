@@ -47,4 +47,14 @@ module.exports = {
 		font: 
 			font-size: "30px"
 		color: "gray"
+	text-tip:
+		width: "80px"
+		height: "80px"
+		border-width: 1
+		border-color: "gray"
+	voice-tip: 
+		width: "80px"
+		height: "80px"
+		border-width: 1
+		border-color: "red"
 }

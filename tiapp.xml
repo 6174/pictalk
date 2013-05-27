@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <property name="acs-oauth-secret-production" type="string">5rmaejRXW46jcrdj87vokjEm2PeQbflp</property>
-    <property name="acs-oauth-key-production" type="string">Ss88bdvelygprVzSryKjWTwOeFg0hbHw</property>
-    <property name="acs-api-key-production" type="string">QI1O5eEeUgiDt4NVBzzyXWuoXjfxXfft</property>
-    <property name="acs-oauth-secret-development" type="string">BC3PoQJohTT3MKMt4hbLDWz8QytjXvqK</property>
-    <property name="acs-oauth-key-development" type="string">BfttmABbCoUgKaok4tcayoHpyzNEBz9h</property>
-    <property name="acs-api-key-development" type="string">LdJSy7S0wVxhGbVqyqBswx2QCV4kN1j5</property>
-    <id>com.pictalk</id>
+    <property name="acs-oauth-secret-production" type="string">5rmaejRXW46jcrdj87vokjEm2Peflp</property>
+    <property name="acs-oauth-key-production" type="string">Ss88bdvelygprVzSryKjWTwOeFg0Hw</property>
+    <property name="acs-api-key-production" type="string">QI1O5eEeUgiDt4NVBzzyXWuoXjfxft</property>
+    <property name="acs-oauth-secret-development" type="string">BC3PoQJohTT3MKMt4hbLz8QytjXvqK</property>
+    <property name="acs-oauth-key-development" type="string">BfttmABbCoUgKaok4tcaypyzNEBz9h</property>
+    <property name="acs-api-key-development" type="string">LdJSy7S0wVxhGbVqyqBswQCV4kN1j5</property>
+    <id>com.pictalking</id>
     <name>tuya</name>
     <version>1.0</version>
     <publisher>Administrator</publisher>
