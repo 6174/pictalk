@@ -13,7 +13,8 @@
 		}
 ```
 
-用户登陆：
+###用户登陆：
+```
 	URL：users/user-login
 	HTTP请求方式：POST
   	请求参数json示例：
@@ -25,8 +26,9 @@
 		{
 			ack: true						// 如果登陆失败则返回false
 		}
-
-用户修改密码：
+```
+###用户修改密码：
+```
 	URL: users/user-password-update
 	HTTP请求方式: POST
 	请求参数json示例：
@@ -39,8 +41,10 @@
 		{
 			ack: true,						// 如果更改不成功则返回false
 		}
+```
 
-用户信息更新：
+###用户信息更新：
+```
 	URL: users/user-info-update
 	HTTP请求方式: POST
 	请求参数json示例：
@@ -55,8 +59,10 @@
 			email: "epson.zhao@gmail.com"	// 修改成功的信息内容
 			gender: "male"					// 用户性别
 		}
+```
 
-用户注销帐号:
+###用户注销帐号:
+```
 	URL: users/user-destroy
 	HTTP请求方式: DELETE
 	请求参数json示例：
@@ -67,8 +73,9 @@
 		{
 			ack: true						// 如果删除不成功则返回false
 		}
-
-获取用户信息：
+```
+###获取用户信息：
+```	
 	URL: users/user-info-read
 	HTTP请求方式: GET
 	请求参数json示例：
@@ -82,8 +89,10 @@
 			email: "epson.zhao@gmail.com"	// 电子邮件
 			gender: "male"					// 用户性别
 		}
+```
 
-发出聊天信息：
+###发出聊天信息：
+```
 	URL: chats/create-chat
 	HTTP请求方式: POST
 	请求参数json示例：
@@ -99,8 +108,10 @@
 			ack: true						// 如果发送不成功则返回false
 			content: "哈哈"					// 返回该条聊天记录的内容 (这里有待商榷)
 		}
+```
 
-删除聊天信息：
+###删除聊天信息：
+```
 	URL: chats/delete-chat
 	HTTP请求方式: DELETE
 	请求参数json示例：
@@ -111,8 +122,9 @@
 		{
 			ack: true						// 如果删除不成功则返回false
 		}
-
-/*读取一条聊天信息:
+```
+###读取一条聊天信息:
+```
 	URL: chats/read-chat
 	HTTP请求方式: GET
 	请求参数json示例：
@@ -128,9 +140,10 @@
 			toUserId: 3,
 			content: "哈哈",													
 		}
-*/
+```
 
-根据图片读取多条聊天信息：
+###根据图片读取多条聊天信息：
+```
 	URL: chats/read-several-chat
 	HTTP请求方式: GET
 	请求参数json示例：
@@ -143,8 +156,9 @@
 			chats: [{}, {}, {}, {}, {}]		// 与该图片相关的所有聊天信息						
 			picId: 2																						
 		}
-
-添加好友：
+```
+###添加好友：
+```
 	URL: friends/create-friend
 	HTTP请求方式: POST
 	请求参数json示例：
@@ -157,8 +171,9 @@
 		{
 			ack: true						// 如果添加失败则返回false												
 		}
-
-删除好友：
+```
+###删除好友：
+```
 	URL: friends/delete-friend
 	HTTP请求方式: DELETE
 	请求参数json示例：
@@ -170,8 +185,9 @@
 		{
 			ack: true						// 如果删除失败则返回false												
 		}
-
-更新好友昵称信息：
+```
+###更新好友昵称信息：
+```
 	URL: friends/update-friend-nick-name
 	HTTP请求方式: POST
 	请求参数json示例：
@@ -184,8 +200,9 @@
 		{
 			ack: true						// 如果修改失败则返回false												
 		}
-
-读取某个好友的用户信息：
+```
+###读取某个好友的用户信息：
+```
 	URL: friends/read-friend-info
 	HTTP请求方式: GET
 	请求参数json示例：
@@ -201,8 +218,9 @@
 			email: "121927532@qq.com"		// 好友的电子邮件地址	
 			gender: "male"					// 好友的性别									
 		}
-
-读取好友列表的信息：
+```
+###读取好友列表的信息：
+```
 	URL: friends/read-friend-list
 	HTTP请求方式: GET
 	请求参数json示例：
@@ -222,8 +240,9 @@
 				}				
 			]									
 		}
-
-创建一张图片：
+```
+###创建一张图片：
+```
 	URL: pics/create-picture
 	HTTP请求方式: POST
 	请求参数json示例：
@@ -236,8 +255,9 @@
 			ack: true,						// 如果创建失败则返回false		
 			picUrl: "xxx/xxx/xxx"			// 图片的url								
 		}
-
-删除一张图片：（删除图片之后附着在该图片上的所有聊天记录都会被删除）
+```
+###删除一张图片：（删除图片之后附着在该图片上的所有聊天记录都会被删除）
+```
 	URL: pics/delete-picture
 	HTTP请求方式: DELETE
 	请求参数json示例：
@@ -249,8 +269,9 @@
 		{
 			ack: true,						// 如果删除失败则返回false									
 		}
-
-读取一张图片：
+```
+###读取一张图片：
+```
 	URL: pics/read-picture
 	HTTP请求方式: GET
 	请求参数json示例：
@@ -263,8 +284,9 @@
 			ack: true,						// 如果获取失败则返回false
 			picUrl: "xxx/xxx/xxx"			// 图片的url								
 		}
-
-根据特定用户读取多张图片：
+```
+###根据特定用户读取多张图片：
+```
 	URL: pics/read-pictures-by-user
 	HTTP请求方式: GET
 	请求参数json示例：
@@ -284,7 +306,7 @@
 				}
 			]					
 		}
-
+```
 
 
 
